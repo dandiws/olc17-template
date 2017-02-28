@@ -245,8 +245,14 @@ header h2{
   text-align: center;
 }
 .ceo-profile{
-  max-width: 200px;
-  height: auto;
+  width: 200px;
+  height: 200px;
+  overflow: hidden;
+  margin: auto;
+  border-radius: 50%;
+}
+.ceo-profile img{
+  width: 100%;
 }
 /* ORGANIZATIONS */
 .organizations .org{
