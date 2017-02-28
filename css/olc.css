@@ -1,0 +1,460 @@
+*{
+  padding: 0;
+  margin: 0;
+}
+body{
+  font-family: 'Montserrat', sans-serif;
+  margin-top: 80px;
+}
+.fly-info{
+  position: fixed;
+  background-color: #e3c24d;
+  z-index: 9999;
+  display: block;
+  width: 100%;
+  min-height: 30px;
+  line-height: 30px;
+  bottom: 0;
+  padding: 10px 0;
+}
+.fly-info .close{
+  position: absolute;
+  right: 10px;
+  top: 0;
+  line-height: 50px;
+  z-index: 4;
+}
+.bar{
+  width: 80px;
+  height: 3px;
+  background-color: #303030;
+  margin: 20px auto;
+  border: 0;
+}
+.navbar-header{
+  text-align: center;
+  display: none;
+}
+.navbar .navbar-nav {
+    display: inline-block;
+    float: none;
+}
+
+.navbar .navbar-collapse {
+    text-align: center;
+}
+.navbar{
+  background-color: #222c37;
+  border-radius: 0;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  padding: 15px 0;
+  min-height: 80px;
+}
+.navbar-default .navbar-nav>li>a{
+  color: #eee;
+  text-transform: uppercase;
+  font-weight: bolder;
+  padding: 0 15px;
+  height: 50px;
+  line-height: 50px;
+}
+.navbar-default .navbar-nav>li>a:hover{
+  color: #5399cc;
+  transform: scale(1.2);
+  transition: .1s;
+}
+.logo-nav-olc{
+  height: 40px;
+  width: auto;
+}
+.navbar-header .logo-nav-olc{
+  margin-left: 15px;
+}
+.navbar-toggle{
+  border: 0;
+}
+.navbar-default .navbar-toggle .icon-bar{
+  background-color: #fff;
+}
+.navbar-default .navbar-toggle.close-menu .icon-bar.satu{
+  transform: translateY(6px) rotate(45deg);
+  transition: .2s;
+}
+.navbar-default .navbar-toggle.close-menu .icon-bar.dua{
+  opacity: 0;
+  transition: .2s;
+}
+.navbar-default .navbar-toggle.close-menu .icon-bar.tiga{
+  transform: translateY(-6px) rotate(-45deg);
+  transition: .2s;
+}
+.navbar-default .navbar-toggle .icon-bar{
+  opacity: 1;
+  transition: .2s;
+  transform: rotate(0) translate(0px);
+}
+.navbar-default .navbar-toggle:focus,
+.navbar-default .navbar-toggle:hover{
+  background-color: rgba(0, 0, 0, 0.3);
+}
+.navbar-default .navbar-collapse{
+border: 0;
+}
+header{
+  text-align: center;
+  position: relative;
+  color: #fff;
+}
+header::after{
+  background: url('../gambar/bg-cloud3.png');
+  content: '';
+  height: 113px;
+  top: auto;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 2;
+}
+header h1 span.tahun{
+  font-size: 4em;
+}
+header h2{
+  font-size:20px;
+}
+.section{
+  background-color: #f4f4f4;
+  display: block;
+  padding: 4em 0;
+}
+.section-title{
+  font-size: 40px;
+  text-align: center;
+}
+/* COURSES */
+.section.courses{
+  background-color: #d9d9d9;
+}
+.col-sm-3{
+  text-align: center;
+}
+.kelas-container{
+  width: 1000px;
+  background-color: #aaa;
+  margin: auto;
+}
+.kelas{
+  display: inline-block;
+  float: left;
+  background-color: #222c37;
+  color: #fff !important;
+  width: 250px;
+  height: 250px;
+  text-align: center;
+  padding: 20px;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.kelas a{
+  display: block;
+  width: 100%;
+  height: 100%;
+  text-decoration: none;
+  color: #fff;
+}
+.kelas:nth-child(odd){
+  background-color: #2d3741;
+}
+.kelas.dark{
+  background-color: #2d3741 !important;
+}
+.kelas.darker{
+  background-color: #222c37 !important;
+}
+.kelas:hover{
+  background: linear-gradient(#2a3752, #222c37);
+  transform: scale(1.1);
+  transition: 0.2s;
+}
+.kelas:nth-child(odd):hover{
+  background: linear-gradient(#2a3752,#2d3741);
+  transition: 0.2s;
+}
+.kelas.darker:hover{
+  background: linear-gradient(#2a3752, #222c37);
+  transform: scale(1.1);
+  transition: 0.2s;
+}
+.kelas.dark:hover{
+  background: linear-gradient(#2a3752,#2d3741);
+  transition: 0.2s;
+}
+.kelas .logo-kelas{
+  width: 100%;
+  height: 70px;
+}
+.kelas .logo-kelas img{
+  width: 70px;
+  height: auto;
+}
+.kelas h4{
+  font-weight: 100;
+  font-size: 1.6em;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+/* ABOUT  */
+.section.about,
+.section.welcome{
+  font-size: 17px;
+  background-color: #f4f4f4;
+}
+
+/*   FYI     */
+.fyi{
+  min-width: 200px;
+  padding: 10px 40px;
+  padding-top: 50px;
+  background-color: #343b49;
+  color: #fff;
+  position: relative;
+}
+.fyi .title{
+  position: absolute;
+  top: 0;
+  left: 0;right: 0;
+  height: 40px;
+  line-height: 40px;
+  background-color: rgba(0, 0, 0, 0.41);
+  text-align: center;
+  font-size: 25px;
+}
+
+/*   WELCOME  */
+.section.welcome{
+  background-color: #222c37;
+  color: #fff;
+}
+.section.welcome .bar{
+  background-color: #fff;
+}
+.center{
+  text-align: center;
+}
+.ceo-profile{
+  max-width: 200px;
+  height: auto;
+}
+/* ORGANIZATIONS */
+.organizations .org{
+  display: inline-block;
+  width: 100px;
+  height: 100px;
+  line-height: 100px;
+  text-align: center;
+  margin: 0 20px;
+  transition: 0.2s;
+}
+.organizations .org-img{
+  width: 80px;
+  height: auto;
+}
+.organizations .org:hover{
+  background-color: rgba(0, 0, 0, 0.2);
+  transition: 0.2s;
+}
+/* FOOTER  */
+footer{
+  background-color: #222c37;
+  padding: 20px 0;
+  color: #fff;
+}
+footer .links {
+  padding-bottom: 10px;
+  border-bottom: 1px solid #22222d;
+}
+footer .links  ul{
+  list-style: none;
+  padding: 0;
+}
+footer .links ul li a{
+  text-decoration: none;
+}
+footer .copy{
+  height: 50px;
+  line-height: 50px;
+}
+footer .social{
+  display: inline-block;
+  float: right;
+}
+footer .social li{
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  margin: 0 5px;
+}
+footer .social li a{
+  color: #fff;
+}
+footer .social li a:hover{
+  color: #4a9cc4;
+}
+/* CONTACT PAGE  */
+.section.contact-page{
+  background-color: #24496d;
+}
+#map{
+  width: 100%;
+  height: 300px;
+  background-color: Lightgrey;
+}
+.col-lg-8,
+.col-lg-4{
+  margin-top: 20px;
+}
+.contacts li{
+  background-color: #222c37;
+  border-color: #2f3f50;
+}
+.contacts li a{
+  color: #eee;
+}
+.contacts .fa{
+  width: 20px;
+  height: 20px;
+  text-align: center;
+  line-height: 20px;
+  margin-right: 10px;
+}
+.contacts .fa.line{
+  display: inline-block;
+  filter: brightness(0) invert(1);
+  width: 15px;
+  height: auto;
+}
+/* COURSES PAGE */
+.course-content{
+  padding: 2em 3em;
+}
+.course-content .course-info ul{
+  background-color: #131b25;
+  color: #fff;
+}
+.course-content .course-info  ul li{
+  background-color: #222c37;
+  color: #fff;
+  border: 1px solid #424a52;
+}
+.course-content .course-info ul li .fa{
+  width: 15px;
+  height: 15px;
+  text-align: center;
+  margin-right: 10px;
+}
+.course-content .course-info ul li a.link{
+  float: right;
+}
+.course-content .course-info  ul h3{
+  text-align: center;
+  margin-bottom: 0;
+  padding: 10px 0;
+  font-size: 18px;
+  text-transform: uppercase;
+}
+#courses-list{
+  background-color: rgba(0,0,0,0);
+  text-transform: uppercase;
+  border-radius: 0;
+  font-size: 20px;
+  font-weight: 900;
+}
+#courses-dropdown .dropdown-menu{
+  border-radius: 0;
+}
+#courses-dropdown .dropdown-menu input{
+  display: none;
+}
+#courses-dropdown .dropdown-menu li{
+  padding: 6px 10px;
+}
+#courses-dropdown .dropdown-menu label{
+  cursor: pointer;
+}
+#courses-dropdown .dropdown-menu label:hover{
+  color: #52a3d1;
+}
+
+/* PAGE */
+.title-page{
+  -webkit-background-size: cover;
+  background-size: cover;
+  background-position: center;
+}
+.title-page .title{
+  color: #fff;
+  text-align: center;
+  font-weight: bolder;
+}
+@media screen and (max-width: 1100px) {
+  .kelas-container{
+    width: 500px;
+  }
+}
+@media screen and (max-width: 600px) {
+  .kelas-container{
+    width: 250px;
+  }
+}
+@media screen and (max-width: 767px) {
+  #logo-olc{
+    display: none;
+  }
+  .navbar-header{
+    display: block;
+  }
+  header::after{
+    display: none;
+  }
+}
+#fyi-carousel .carousel-inner{
+
+}
+#fyi-carousel .carousel-inner .carousel-caption{
+  position: static;
+}
+#fyi-carousel .carousel-control{
+  background: rgba(0, 0, 0, 0);
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  top: 0;
+  bottom: 0;
+  position: absolute;
+  margin: auto;
+}
+#fyi-carousel .carousel-control.right{
+  right: -40px;
+}
+#fyi-carousel .carousel-control.left{
+  left: -40px;
+}
+#fyi-carousel .carousel-indicators{
+  bottom: 0;
+}
+
+@media only screen and (max-width : 480px) {
+  .fly-info{
+    line-height: 1.5;
+  }
+  .copy{
+    text-align: center;
+  }
+  .copy .social{
+    width: 100%;
+    text-align: center;
+  }
+}
