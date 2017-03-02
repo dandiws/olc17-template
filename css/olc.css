@@ -6,6 +6,9 @@ body{
   font-family: 'Montserrat', sans-serif;
   margin-top: 80px;
 }
+.olc-btn{
+  background-color:#222c37 !important;
+}
 .fly-info{
   position: fixed;
   background-color: #e3c24d;
@@ -194,6 +197,10 @@ header h2{
 .kelas .logo-kelas{
   width: 100%;
   height: 70px;
+  opacity:0.8;
+}
+.kelas:hover .logo-kelas{
+  opacity:0.95;
 }
 .kelas .logo-kelas img{
   width: 70px;
